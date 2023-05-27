@@ -1,0 +1,894 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #999;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+
+.text-da {
+    color: #343a40;
+}
+
+/* //Reset Code */
+
+/* header */
+/* top bar */
+.header-top {
+	padding-left:50px;
+}
+
+/* social icons */
+.top-right-info li a {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+.top-right-info li a span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.top-right-info li p {
+    margin-right: 6px;
+	margin-top:40px;
+    font-size: 16px;
+}
+
+.top-right-info li.facebook a {
+    background: #3b5998;
+}
+
+.top-right-info li.twitter a {
+    background: #1da1f2;
+}
+
+.top-right-info li.google a {
+    background: #F44336;
+}
+
+.top-right-info li {
+    display: inline-block;
+}
+
+nav li:last-child {
+    margin: 0;
+}
+
+/* //social icons */
+.header-top p {
+    font-size: 14px;
+}
+.middle-flex {
+    align-items: center;
+}
+
+/* //top bar */
+/* header 2 */
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav_web-dealingsls {
+    margin-left: 450px;
+}
+
+/* navigation */
+
+/* Removing padding, margin and "list-style" from the "ul",* and adding "position:reltive" */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    display: inline-block;
+    float: left;
+}
+
+/* Styling the links */
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #3a3939;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    letter-spacing: .5px;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    color: #3a3939;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 24px;
+    background: #fff;
+    padding: 10px;
+    z-index: 9;
+    border: 1px solid #e4e4e4;
+    /* has to be the same number as the "line-height" of "nav a" */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+}
+
+nav ul ul li a {
+    display: block;
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+a.drop-text:hover {
+    background: #f5f5f5;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+/* //navigation */
+
+/* logo */
+a.logo {
+    color: #3a3939;
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+    position: relative;
+	color:none;
+	text-decoration:none;
+}
+
+a.logo span {
+    color: #ff3f34;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+/* //logo */
+/* //header 2 */
+
+/* slides images */
+.marquee {
+    background-image:url(../images/marquee.PNG);
+    background-repeat: repeat-x;
+    animation: slideleft 20000s infinite linear;
+    background-size: cover;
+    min-height: 400px;
+}
+
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 90000%;
+    }
+}
+
+/* //slides images */
+
+/* footer */
+footer {
+    background: #17181b;
+}
+
+h2 a.logo {
+    color: #fff;
+}
+
+.footer-text p,
+.footer-text p a {
+    color: #727377;
+    font-size: 15px;
+}
+
+.footer-title h3 {
+    font-size: 24px;
+    color: #f3f3f3;
+    letter-spacing: 1px;
+}
+
+/* form */
+.info-form-right input[type="text"],
+.info-form-right input[type="email"],
+.info-form-right textarea {
+    color: #000;
+    background: #f7f7f7;
+    outline: none;
+    font-size: 14px;
+    padding: 9px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.info-form-right textarea {
+    resize: none;
+    min-height: 6em;
+}
+
+button.submit-contact {
+    background: #ff3f34;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 26px;
+    font-size: 14px;
+    display: inherit;
+    border-radius: 4px;
+}
+
+button.submit-contact:hover {
+    opacity: .8;
+}
+.submit-contact-top {
+	margin-top: 1em;
+}
+
+/* //form */
+
+/* copyright */
+.cpy-right {
+    background: #1c1d21;
+}
+.cpy-right p {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.cpy-right p a {
+    color: #eee;
+}
+.cpy-right p a:hover {
+    color: #ff514e;
+}
+/* //copyright */
+/* footer */
+
+/* inner pages */
+
+.order_banner {
+    background: url(../images/order.png) no-repeat center;
+    background-size: contain;
+    min-height: 600px;
+	min-width: 800px;
+	background-color:rgba(89,122,53);
+}
+
+.home_banner {
+    background: no-repeat ;
+    background-size: cover;
+    min-height: 600px;
+	min-width: 1200px;
+}
+
+.home_second_banner {
+    background:url(../images/bg_final.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+	min-width: 300px;
+}
+
+.home_third_banner {
+    background:url(../images/home_delivery.PNG) no-repeat center;
+    background-size: cover;
+    min-height: 200px;
+	min-width: 200px;
+}
+
+.home_fourth_banner {
+    background:url(../images/home_tastebud.PNG) no-repeat center;
+    background-size: cover;
+    min-height: 200px;
+	min-width: 300px;
+}
+
+
+.menu_banner {
+    background: url(../images/menu_banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+	min-width: 800px;
+}
+
+.chefs_banner {
+    background: url(../images/chefs_banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 800px;
+	min-width: 1500px;
+}
+
+.story_banner {
+    background: url(../images/story_banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 800px;
+	min-width: 1500px;
+}
+
+.terms_conditions_banner {
+    background: url(../images/condition_banner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 800px;
+	min-width: 1500px;
+}
+
+/* page details */
+.breadcrumb li a {
+    color: #ff3f34;
+    font-weight: bold;
+}
+.breadcrumb li {
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 15px;
+}
+/* //page details */
+
+/*facebook and etc are in left hand side*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* //facebook and etc are in left hand side*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+/*logo work*/
+a.logo {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+/* //logo work*/
+
+input,
+button,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  margin-top: 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  
+}
+img.img-fluid.sub-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+img.img-fluid.sub-img {
+        width: 36%;
+    }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/*col-xl-7  col-xl-5  col-lg-5  col-lg-7 col-lg-4 col-lg-6  col-md-4*/
+.col-md-4,.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,.col-xl-5,.col-xl-7{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+  .col-lg-4 {	  
+  padding-left: 15px;
+    max-width: 33.333333%;
+  }
+  .col-lg-5 {
+	  
+  padding-left: 15px;
+    max-width: 41.666667%;
+  }
+  .col-lg-6 {
+	padding-left: 15px;
+    max-width: 50%;
+  }
+  .col-lg-7 {
+  padding-left: 90px;
+    }
+  .col-xl-5 {
+	 padding-left: 15px;
+    max-width: 41.666667%;
+  }
+  .col-xl-7 {  
+  padding-left: 15px;
+    max-width: 58.333333%;
+  }
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  }
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.m-0 { /*yeh hai*/
+  margin: 0 !important;
+}
+
+.mb-2 { /*yeh hai*/
+  margin-bottom: 0.5rem !important;
+}
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.pl-lg-1 {
+    padding-left: 0px !important;
+  }
+
+.ml-auto { /*yeh hai*/
+  margin-left: auto !important;
+}
+   .py-xl-4 { /*yeh hai*/
+    padding-top: 1.5rem !important;
+	padding-bottom: 1.5rem !important;
+  }
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.breadcrumb_item { 
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  content: "/";
+}
+
+/* model */
+.width_form {
+	width:355px;
+}
+
+/* //model */
+
+
+/* order  //login ka tha pehlay lakin teacher ne kaha tha iss ko nikal dou lakin yeh same hai order ka aur mein ne naam change karnay kay bajaye issi ko used kya hai  */
+
+.login {
+    max-width: 500px;
+    border: 1px solid #eee;
+}
+.login-body h5 {
+    color: #000;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.p-4 {
+  padding: 1.5rem !important;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.label-write {
+	font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+.width_form_login {
+	width:440px;
+	height:40px;
+}
+.password-top {
+	margin-top:35px;
+}
+p.account a {
+    color: #05c46b;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.submit-login {
+  width:440px;
+  margin-top:35px;
+  margin-bottom:15px;
+  }
+
+/* //order */
+
+
+
+
+/* MENU */
+
+.portfolio {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+.py-xl-5 {
+    padding-top: 3rem !important;
+	padding-bottom: 3rem !important;
+  }
+  
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.py-lg-3 {
+    padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+  }
+  
+.mb-md-5 {
+    margin-bottom: 3rem !important;
+  }  
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+h3.title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+}
+h3.title span {
+    color: #ff3f34;
+}
+
+.col-md-4 {
+  max-width: 33.333333%;
+  padding-left: 15px;
+  }
+  
+.mt-md-0 {
+    margin-top: 0 !important;
+  }
+
+/* menu page */
+.gallery-demo {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.07), 0 5px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 14px 0 rgba(0, 0, 0, 0.04);
+  }
+.gallery-demo:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+  }
+
+h4.p-mask {
+    color: #636363;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 14px 10px 20px;
+}
+
+h4.p-mask span {
+    color: #191919;
+    font-size: 24px
+}
+
+/* //menu page */
+
+/* gallery */
+/* popup */
+.pop-overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.pop-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+    margin: 5.5em auto;
+    padding: 3em 2em 2em;
+    text-align: center;
+}
+.popup-menu {
+	   max-width: 500px;
+ 
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup .close:hover {
+    color: #7870fb;
+}
+
+/* //popup */
+/* //gallery */
+
+/*button*/
+a.button {
+    color: #615f5f;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 1px solid #c1c0c0;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+a.button.active {
+    color: #fff;
+    background: #05c46b;
+    border-color: #05c46b;
+}
+
+a.button:hover {
+    color: #fff;
+    background: #05c46b;
+    border-color: #05c46b;
+}
+/* //button */
+
+/* //MENU */
+
+
+/* ORDER */
+
+.popup-order {
+	max-width:1500px;
+}
+
+.img-fluid-order {
+  max-width: 100%;
+  height: auto;
+  width:400px; 
+  margin-right:500px; 
+}
+
+.order {
+	padding-left:300px;
+}
+
+h4.p-mask-order {
+    color: #636363;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-right:500px;
+}
+
+h4.p-mask-order span {
+    color: #191919;
+    font-size: 24px
+}
+
+
+/* //ORDER */
+
+
+/* OUR CHEFS */
+
+.chef-margin-top{
+	  margin-top:80px;
+}
+
+.chef_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom:150px;
+}
+.chef_container div{
+  width: 400px;
+  height: 300px;
+  margin-top: 10px;
+}
+.chef_container div ul{
+  list-style: none;
+  align-items: center;
+  width: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  left: 180px;
+}
+
+/* //OUR CHEFS */
+
+/* margin */
+.margin-bottom {
+    margin-bottom:150px;
+}
+.margin-right {
+    margin-right:70px;
+}
+.margin-left {
+    margin-left:70px;
+}
+
+/* //margin */
+
+
+
+/* STORY */
+.story {
+    background:url(../images/story.jpg) no-repeat;
+    background-size: auto;
+    min-height: 440px;
+	min-width: 100px;
+	margin-left:380px;
+}
+/* //STORY */
+
+/* LOGIN */
+.body_background {
+    background-image:url(../images/condition_banner.jpg);
+	}
+.label-write-login {
+	font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+	color:#FFF;
+}
+.label-write-color {
+	color:#FFF;
+}	
+/* //LOGIN */
+
